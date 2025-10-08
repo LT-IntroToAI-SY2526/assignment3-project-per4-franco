@@ -2,20 +2,23 @@ from games import game_db
 from match import match
 from typing import List, Tuple, Callable, Any
 
-def get_title(game: Tuple[str, str, int, List[str]]) -> str:
+def get_title(game: Tuple[str, str, int, List[str], List[str]]) -> str:
     return game[0]
 
 
-def get_developer(game: Tuple[str, str, int, List[str]]) -> str:
+def get_developer(game: Tuple[str, str, int, List[str], List[str]]) -> str:
     return game[1]
 
 
-def get_year(game: Tuple[str, str, int, List[str]]) -> int:
+def get_year(game: Tuple[str, str, int, List[str], List[str]]) -> int:
     return game[2]
 
 
-def get_characters(game: Tuple[str, str, int, List[str]]) -> List[str]:
+def get_characters(game: Tuple[str, str, int, List[str], List[str]]) -> List[str]:
     return game[3]
+
+def get_genre(game: Tuple[str, str, int, List[str], List[str]]) -> List[str]:
+    return game[4]
 
 def title_by_year(matches: List[str]) -> List[str]:
     year = int(matches[0])
@@ -87,6 +90,15 @@ def title_by_character(matches: List[str]) -> List[str]:
     for i in game_db:
         characterlist = get_characters(i)
         if character in characterlist:
+            result.append(get_title(i))
+    return result
+
+def title_by_genre(matches: List[str]) -> List[str]:
+    result=[]
+    genre=matches[0]
+    for i in game_db:
+        genrelist = get_genre(i)
+        if genre in genrelist:
             result.append(get_title(i))
     return result
 
