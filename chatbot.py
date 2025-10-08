@@ -92,3 +92,14 @@ def title_by_character(matches: List[str]) -> List[str]:
 
 def bye_action(dummy: List[str]) -> None:
     raise KeyboardInterrupt
+pa_list = [
+    (str.split("what games were made in _"), title_by_year),
+    (str.split("what games were made before _"), title_before_year),
+    (str.split("what games were made after _"), title_after_year),
+    (str.split("what games were made between _ and _"), title_by_year_range),
+    (str.split("who developed %"), developer_by_title),
+    (str.split("what games were developed by %"), title_by_developer),
+    (str.split("who are the characters in %"), characters_by_title),
+    (str.split("in what games did % appear"), title_by_character),
+    (["bye"], bye_action),
+]

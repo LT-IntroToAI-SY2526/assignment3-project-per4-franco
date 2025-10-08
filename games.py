@@ -21,4 +21,15 @@ game_db: List[Tuple[str, str, int, List[str]]] = [
     ("doom eternal", "id software", 2020, ["doom slayer", "vega", "khan maykr"]),
     ("final fantasy vii", "square enix", 1997, ["cloud", "tifa", "aerith", "sephiroth"]),
     ("stardew valley", "concernedape", 2016, ["farmer", "sebastian", "abigail", "penny"]),
+    ("the legend of zelda: tears of the kingdom", "nintendo", 2023, ["link", "zelda", "ganondorf"]),
+    ("god of war ragnarok", "santa monica studio", 2022, ["kratos", "atreus", "freya"]),
+    ("the last of us part ii", "naughty dog", 2020, ["ellie", "abby", "joel"]),
+    ("red dead redemption", "rockstar games", 2010, ["john marston", "bonnie mcfarlane"]),
+    ("the witcher 2: assassins of kings", "cd projekt red", 2011, ["geralt", "triss", "roche"]),
+    ("dark souls iii", "fromsoftware", 2016, ["ashen one", "fire keeper", "lothric"]),
+    ("metal gear solid 3: snake eater", "konami", 2004, ["naked snake", "the boss", "ocelot"]),
+    ("bioshock", "irrational games", 2007, ["jack", "atlas", "andrew ryan"]),
+    ("persona 4", "atlus", 2008, ["yu narukami", "yosuke", "chie", "teddie"]),
+    ("half-life: alyx", "valve", 2020, ["alyx vance", "russell"]),
 ]
+
