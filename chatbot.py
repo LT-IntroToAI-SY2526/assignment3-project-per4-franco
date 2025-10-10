@@ -102,8 +102,18 @@ def title_by_genre(matches: List[str]) -> List[str]:
             result.append(get_title(i))
     return result
 
+def genre_by_title(matches: List[str]) -> List[str]:
+    result=[]
+    title=matches[0]
+    for i in game_db:
+        if get_title(i)==title:
+            result = get_genre(i)
+            break
+    return result  
+
 def bye_action(dummy: List[str]) -> None:
     raise KeyboardInterrupt
+
 pa_list = [
     (str.split("what games were made in _"), title_by_year),
     (str.split("what games were made before _"), title_before_year),
@@ -113,5 +123,9 @@ pa_list = [
     (str.split("what games were developed by %"), title_by_developer),
     (str.split("who are the characters in %"), characters_by_title),
     (str.split("in what games did % appear"), title_by_character),
+    (str.split("what games are in the % genre"), title_by_genre),
+    (str.split("what genre is %"), genre_by_title),
+
+
     (["bye"], bye_action),
 ]
