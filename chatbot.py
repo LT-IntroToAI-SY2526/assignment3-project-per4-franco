@@ -159,7 +159,6 @@ def query_loop() -> None:
 
 
 if __name__ == "__main__":
-    # ----- TESTS -----
     # Testing title_by_year
     assert isinstance(title_by_year(["2017"]), list), "title_by_year not returning a list"
     assert sorted(title_by_year(["2017"])) == sorted(
@@ -234,6 +233,6 @@ if __name__ == "__main__":
 
     print("All tests passed!")
 
-    # THEN run chatbot
+    # this runs the actual query loop which is the chatbot
     query_loop()
 
