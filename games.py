@@ -180,7 +180,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("xenoblade chronicles", "monolith soft", 2010, ["shulk", "fonse"], ["JRPG", "action"]),
     ("xenoblade chronicles 2", "monolith soft", 2017, ["pyra", "rex"], ["JRPG", "action"]),
     ("xenoblade chronicles 3", "monolith soft", 2022, ["taion", "mio"], ["JRPG", "action"]),
-    ("chronno trigger", "square", 1995, ["cron o? (typo)"], ["JRPG"]),  # placeholder correction: chrono trigger below
     ("chrono trigger", "square", 1995, ["cron o? (typo)"], ["JRPG"]),
     ("final fantasy vi", "square", 1994, ["terra", "locke", "kefka"], ["JRPG"]),
     ("final fantasy ix", "square", 2000, ["zidane", "garnet"], ["JRPG", "fantasy"]),
@@ -191,7 +190,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("shenmue", "yu suzuki / sega", 1999, ["ryo hazuki"], ["adventure", "open world"]),
     ("shenmue ii", "sega", 2001, ["ryo hazuki"], ["adventure", "open world"]),
     ("yakuza 0", "ryo ga gotoku studio", 2015, ["kazuma kiryu", "majima"], ["action-adventure", "beat 'em up"]),
-    ("like a dragon: ishin", "ryo ga gotoku studio", 2014, ["sakamoto ryoma"], ["action-adventure"]),  # note: multiple regional names
     ("yakuza: like a dragon", "ryo ga gotoku studio", 2020, ["ichiban kasuga"], ["RPG", "action-adventure"]),
     ("tekken 3", "bandai namco", 1997, ["jin kazama", "heihachi"], ["fighting"]),
     ("street fighter ii", "capcom", 1991, ["ryu", "ken", "chun-li"], ["fighting"]),
@@ -221,7 +219,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("grim dawn", "crate entertainment", 2016, ["inquisitor"], ["action RPG"]),
     ("gothic", "piranha bytes", 2001, ["player"], ["RPG"]),
     ("risen", "piranha bytes", 2009, ["player"], ["RPG", "fantasy"]),
-    ("two worlds", "tychoplayers", 2007, ["player"], ["RPG"]),  # placeholder stylistic
     ("the witcher", "cd projekt red", 2007, ["geralt"], ["RPG", "fantasy"]),
     ("the witcher: enhanced edition", "cd projekt red", 2008, ["geralt"], ["RPG", "fantasy"]),
     ("the witcher 3: hearts of stone (expansion)", "cd projekt red", 2015, ["geralt"], ["action RPG"]),
@@ -254,7 +251,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("baldur's gate 3", "larian studios", 2023, ["player", "laezel"], ["RPG", "party"]),
     ("divinity: original sin 2", "larian studios", 2017, ["player"], ["RPG", "party"]),
     ("divinity: original sin", "larian studios", 2014, ["player"], ["RPG"]),
-    ("louisiana noir", "fictional studio", 2020, ["detective?"], ["adventure"]),  # placeholder - used for variety
     ("prey (2017)", "arkane studios", 2017, ["morgan yu"], ["first-person", "sci-fi"]),
     ("dishonored: death of the outsider", "arcane studios", 2017, ["billie lurk"], ["stealth", "action-adventure"]),
     ("prey (2006)", "human head studios", 2006, ["tommy"], ["first-person", "sci-fi"]),
@@ -274,7 +270,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("alan wake 2", "remedy entertainment", 2023, ["alan wake"], ["survival horror", "psychological"]),
     ("the evil within", "tango gameworks", 2014, ["sebastian castellanos"], ["survival horror"]),
     ("the evil within 2", "tango gameworks", 2017, ["sebastian castellanos"], ["survival horror"]),
-    ("prey: moonshot", "fictional studio", 2022, ["astronaut"], ["sci-fi"]),  # synthetic filler for coverage
     ("persona 5 royal", "atlus", 2019, ["joker", "morgana"], ["JRPG", "social sim"]),
     ("shantae and the pirate's curse", "wayforward", 2014, ["shantae"], ["platformer", "metroidvania"]),
     ("shantae: half-genie hero", "wayforward", 2016, ["shantae"], ["platformer"]),
@@ -284,7 +279,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("legacy of kain: soul reaver 2", "crystal dynamics", 2001, ["raziel"], ["action-adventure"]),
     ("legacy of kain: defiance", "n/a", 2003, ["kain", "raziel"], ["action-adventure"]),
     ("system shock 2", "irrational games", 1999, ["player"], ["RPG", "sci-fi"]),
-    ("cyberpunked", "fictional studio", 2018, ["antihero"], ["action", "sci-fi"]),  # small synthetic additions kept minimal
     ("sifu", "sloclap", 2022, ["yang"], ["action", "martial arts"]),
     ("forza horizon", "playground games", 2012, ["driver"], ["racing", "open world"]),
     ("gran turismo 3", "polyphony digital", 2001, ["driver"], ["racing"]),
@@ -370,7 +364,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("tales of berseria", "bandai namco", 2016, ["velvet"], ["JRPG"]),
     ("tales of arise", "bandai namco", 2021, ["alphen", "shionne"], ["JRPG"]),
     ("saga: frontiers", "square", 1997, ["various"], ["JRPG"]),
-    ("legend of legaia", "contradiction", 1998, ["vaid"], ["JRPG"]),  # approximate / filler
     ("star fox 64", "nintendo", 1997, ["fox mccloud"], ["shooter"]),
     ("star fox zero", "nintendo", 2016, ["fox mccloud"], ["shooter"]),
     ("starlink: battle for atlas", "ubisoft", 2018, ["pilot"], ["action", "space"]),
@@ -400,7 +393,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("dark cloud 2", "level-5", 2002, ["max"], ["action RPG"]),
     ("ni no kuni: wrath of the white witch", "level-5", 2011, ["oliver"], ["JRPG", "family"]),
     ("ni no kuni ii: revenant kingdom", "level-5", 2018, ["evan"], ["JRPG", "family"]),
-    ("grove", "fictional studio", 2019, ["protagonist"], ["adventure"]),  # small synthetic filler
     ("baba is you", "henriks", 2019, ["baba"], ["puzzle", "indie"]),
     ("hexcells infinite", "matthew brown", 2015, ["player"], ["puzzle"]),
     ("the talos principle", "croteam", 2014, ["player"], ["puzzle", "philosophical"]),
@@ -409,11 +401,9 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("human fall flat", "no brakes games", 2016, ["bob"], ["physics", "puzzle"]),
     ("fall guys", "mediatonic", 2020, ["bean"], ["party", "battle royale"]),
     ("among us", "innersloth", 2018, ["crewmate", "impostor"], ["party", "social deduction"]),
-    ("phasmophobia", "kefir? (dev?)", 2020, ["player"], ["co-op", "horror"]),  # small dev detail approximate
     ("the witcher 3: blood and wine", "cd projekt red", 2016, ["geralt"], ["action RPG", "expansion"]),
     ("the witcher 3: hearts of stone", "cd projekt red", 2015, ["geralt"], ["action RPG", "expansion"]),
     ("dragon's dogma", "capcom", 2012, ["arisen"], ["action RPG"]),
-    ("dragon's dogma 2", "capcom", 2024, ["arisen"], ["action RPG"]),  # modern release
     ("soulcalibur vi", "bandai namco", 2018, ["siegfried", "taki"], ["fighting"]),
     ("tekken 7", "bandai namco", 2015, ["jin kazama", "kazuya"], ["fighting"]),
     ("virtua fighter 5", "sega am2", 2006, ["akira"], ["fighting"]),
@@ -434,14 +424,11 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("heroes of might and magic v", "nmanic", 2006, ["heroes"], ["strategy", "turn-based"]),
     ("magic the gathering: duels of the planeswalkers", "stainless games", 2009, ["player"], ["card game"]),
     ("mutant year zero: road to eden", "the beadles", 2018, ["stalker"], ["strategy", "RPG"]),
-    ("grotesque tactics", "silent dreams", 2009, ["hero"], ["RPG"]),  # filler older title
     ("vagrant story", "square", 2000, ["ashley riot"], ["action RPG"]),
     ("parasite eve", "square", 1998, ["aya brea"], ["RPG", "survival horror"]),
     ("parasite eve ii", "square", 1999, ["maya"], ["action", "survival horror"]),
     ("legacy of kain: blood omen", "silicon studios", 1996, ["kain"], ["action-adventure"]),
-    ("inhere", "fictional indie", 2021, ["protagonist"], ["adventure"]),  # small synthetic filler
     ("sacred 2: fallen angel", "ascaron", 2008, ["hero"], ["action RPG"]),
-    ("vault of arcana", "fictional studio", 2015, ["hero"], ["RPG"]),  # small synthetic
     ("heroes of the storm", "blizzard entertainment", 2015, ["various heroes"], ["MOBA"]),
     ("dota 2", "valve", 2013, ["heroes"], ["MOBA"]),
     ("league of legends", "riot games", 2009, ["champions"], ["MOBA"]),
@@ -451,10 +438,7 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("doom ii", "id software", 1994, ["doomguy"], ["first-person shooter"]),
     ("diablo iv", "blizzard entertainment", 2023, ["player"], ["action RPG"]),
     ("warhammer: vermintide 2", "fatshark", 2018, ["soldier"], ["co-op", "action"]),
-    ("left 4 dead 3 (rumored)", "valve", 20, ["survivors"], ["co-op", "survival"]),  # placeholder / intentionally minimal
     ("helldivers 2", "arrowhead studios", 2023, ["soldier"], ["co-op", "shooter"]),
-    ("anthem (revamped)", "bio ware", 202X, ["freelancer"], ["action RPG"]),  # placeholder modern variations
-    ("project zomboid", "the indiestone", 2013, ["survivor"], ["survival", "simulation"]),  # dev name approximate
     ("rimworld alpha", "ludeon studios", 2013, ["colonist"], ["simulation"]),
     ("papers please: inspector's edition", "3909", 2014, ["inspector"], ["simulation", "puzzle"]),
     ("spore", "maxis", 2008, ["creator"], ["simulation", "life sim"]),
@@ -464,8 +448,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("rollercoaster tycoon 3", "frontier", 2004, ["park manager"], ["simulation"]),
     ("planet coaster", "frontier", 2016, ["park manager"], ["simulation"]),
     ("two brothers: a tale of two sons", "starbreeze", 2013, ["brothers"], ["adventure"]),
-    ("brothers: a tale of two sons (remake)", "starbreeze", 202X, ["brothers"], ["adventure"]),  # modern remake placeholder
-    ("the sinner's path", "indie studio", 2019, ["player"], ["adventure"]),  # small synthetic filler
     ("yooka-laylee", "playtonic games", 2017, ["yooka", "laylee"], ["platformer"]),
     ("banjo-kazooie", "rare", 1998, ["banjo", "kazooie"], ["platformer"]),
     ("banjo-tooie", "rare", 2000, ["banjo", "kazooie"], ["platformer"]),
@@ -494,7 +476,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("age of empires iii", "ensemble studios", 2005, ["colonial leaders"], ["RTS", "historical"]),
     ("command & conquer: red alert 2", "westwood studios", 2000, ["soviet", "allied"], ["RTS"]),
     ("command & conquer 3: tiberium wars", "ea los angeles", 2007, ["general"], ["RTS"]),
-    ("star wars: knights of the old republic - remake (announced)", "aspyr/lucasfilm", 202x, ["revan"], ["RPG"]),  # placeholder announced project
     ("horizon zero dawn", "guerrilla games", 2017, ["aloy"], ["action RPG", "open world"]),
     ("horizon forbidden west", "guerrilla games", 2022, ["aloy"], ["action RPG", "open world"]),
     ("killzone", "guerrilla games", 2004, ["soldier"], ["first-person shooter"]),
@@ -511,7 +492,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("tomb raider (2013)", "core design/crystal dynamics", 2013, ["lara croft"], ["action-adventure"]),
     ("rise of the tomb raider", "crystal dynamics", 2015, ["lara croft"], ["action-adventure"]),
     ("shadow of the tomb raider", "eidos montreal", 2018, ["lara croft"], ["action-adventure"]),
-    ("school of dragons", "poru games", 2015, ["player"], ["family", "adventure"]),  # small filler
     ("legacy of the void", "blizzard entertainment", 2015, ["jim raynor", "kerrigan"], ["RTS"]),
     ("star wars: the old republic", "bioware", 2011, ["player"], ["MMORPG", "sci-fi"]),
     ("everquest", "verant interactive", 1999, ["player"], ["MMORPG", "fantasy"]),
@@ -537,7 +517,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("ace attorney: justice for all", "capcom", 2002, ["phoenix wright"], ["visual novel", "puzzle"]),
     ("ghost trick: phantom detective", "capcom", 2010, ["sissel"], ["puzzle", "adventure"]),
     ("zero escape: nine hours, nine persons, nine doors", "chunsoft", 2009, ["junpei"], ["visual novel", "puzzle"]),
-    ("zero escape: virtuous ring", "sp? (developer)", 2012, ["player"], ["visual novel"]),  # approximate
     ("va-11 hall-a", "sukeban games", 2016, ["guy"], ["visual novel", "simulation"]),
     ("danganronpa: trigger happy havoc", "spike chunsoft", 2010, ["makoto"], ["visual novel", "mystery"]),
     ("danganronpa 2: goodbye despair", "spike chunsoft", 2012, ["hajime"], ["visual novel", "mystery"]),
@@ -606,7 +585,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("garou: mark of the wolves", "snk", 1999, ["rock"], ["fighting"]),
     ("samurai shodown", "snk", 1993, ["haohmaru"], ["fighting"]),
     ("the wonderful 101", "platinumgames", 2013, ["wonderful 100"], ["action"]),
-    ("astral chain remastered", "platinumgames", 202X, ["officer"], ["action"]),
     ("tunic", "isometric studio", 2022, ["fox"], ["action-adventure", "indie"]),
     ("gods will be watching", "deconstructeam", 2014, ["soldier"], ["pixel", "adventure"]),
     ("kings bounty: the legend", "katauri interactive", 2008, ["player"], ["strategy", "RPG"]),
@@ -639,7 +617,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("ark: survival of the fittest", "studio wildcard", 2016, ["player"], ["battle royale", "survival"]),
     ("ark: extinction", "studio wildcard", 2018, ["player"], ["survival", "expansion"]),
     ("ark: scorched earth", "studio wildcard", 2016, ["player"], ["survival", "expansion"]),
-    ("foxhole", "belgian dev", 2020, ["soldier"], ["MMO", "strategy"]),  # dev name approximate
     ("hell let loose", "black matter", 2019, ["soldier"], ["first-person shooter", "historical"]),
     ("post scriptum", "periscope games", 2018, ["soldier"], ["first-person shooter", "historical"]),
     ("war thunder", "gaijin entertainment", 2013, ["pilot"], ["vehicle combat", "MMO"]),
@@ -690,7 +667,6 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("lego dimensions", "travellers tales", 2015, ["various"], ["family", "action"]),
     ("lego city undercover", "travellers tales", 2013, ["chase mcCain"], ["family", "open world"]),
     ("the crew", "ivory tower", 2014, ["driver"], ["racing", "open world"]),
-    ("martial arts academy", "fictional dev", 2016, ["student"], ["fighting", "simulation"]),  # small synthetic
     ("no more heroes 3", "grasshopper manufacture", 2021, ["travis"], ["action"]),
     ("trials hd", "redlynx", 2009, ["rider"], ["platformer", "racing"]),
     ("trials evolution", "redlynx", 2012, ["rider"], ["platformer", "racing"]),
@@ -711,13 +687,10 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("simple rockets", "jx2", 2013, ["engineer"], ["simulation", "space"]),
     ("kerbal space program", "squad", 2015, ["kerbal"], ["simulation", "space"]),
     ("kerbal space program 2", "intercept games", 2023, ["kerbal"], ["simulation", "space"]),
-    ("stella aurora", "fictional dev", 2020, ["protagonist"], ["RPG"]),  # filler synthetic
     ("warframe: the second dream", "digital extremes", 2013, ["tenno"], ["action", "sci-fi"]),
     ("warframe: plains of eidolon", "digital extremes", 2017, ["tenno"], ["open world", "action"]),
-    ("gods unchained", "immutable", 2019, ["player"], ["card game", "blockchain"]),  # modern blockchain note
     ("crypto kitties", "dapper labs", 2017, ["cats"], ["blockchain", "collector"]),
     ("axie infinity", "sky mavis", 2018, ["axies"], ["blockchain", "strategy"]),
-    ("the witnessed 2", "fictional dev", 2024, ["player"], ["puzzle"]),  # synthetic modern
     ("myst remastered", "cyan worlds", 2021, ["player"], ["adventure", "puzzle"]),
 ]
 
