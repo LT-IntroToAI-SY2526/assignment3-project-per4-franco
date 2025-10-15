@@ -111,6 +111,15 @@ def genre_by_title(matches: List[str]) -> List[str]:
             break
     return result  
 
+def developers_by_genre(matches: List[str]) -> List[str]:
+    result=set()
+    genre=matches[0]
+    for game in game_db:
+        genres=get_genre(game)
+        if genre in genres:
+            result.add(get_developer(game))
+    return list(result)  #this convers the set back to a list before you return it
+
 def bye_action(dummy: List[str]) -> None:
     raise KeyboardInterrupt
 
@@ -125,6 +134,7 @@ pa_list = [
     (str.split("in what games did % appear"), title_by_character),
     (str.split("what games are in the % genre"), title_by_genre),
     (str.split("what genre is %"), genre_by_title),
+    (str.split("who develops games in the % genre"), developers_by_genre),
     (["bye"], bye_action),
 ]
 
