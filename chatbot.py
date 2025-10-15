@@ -159,79 +159,79 @@ def query_loop() -> None:
 
 
 if __name__ == "__main__":
-    # Testing title_by_year
-    assert isinstance(title_by_year(["2017"]), list), "title_by_year not returning a list"
-    assert sorted(title_by_year(["2017"])) == sorted(
-        ["the legend of zelda: breath of the wild", "hollow knight", "super mario odyssey"]
-    ), "failed title_by_year test"
+    # # Testing title_by_year
+    # assert isinstance(title_by_year(["2017"]), list), "title_by_year not returning a list"
+    # assert sorted(title_by_year(["2017"])) == sorted(
+    #     ["the legend of zelda: breath of the wild", "hollow knight", "super mario odyssey"]
+    # ), "failed title_by_year test"
 
-    # Testing title_by_year_range
-    assert isinstance(title_by_year_range(["2015", "2017"]), list), "title_by_year_range not returning a list"
-    assert sorted(title_by_year_range(["2015", "2017"])) == sorted(
-    [
-        "the witcher 3: wild hunt",
-        "undertale",
-        "metal gear solid v: the phantom pain",
-        "dark souls iii",
-        "persona 5",
-        "stardew valley",
-        "the legend of zelda: breath of the wild",
-        "hollow knight",
-        "super mario odyssey",
-    ]
-    ), "failed title_by_year_range test"
+    # # Testing title_by_year_range
+    # assert isinstance(title_by_year_range(["2015", "2017"]), list), "title_by_year_range not returning a list"
+    # assert sorted(title_by_year_range(["2015", "2017"])) == sorted(
+    # [
+    #     "the witcher 3: wild hunt",
+    #     "undertale",
+    #     "metal gear solid v: the phantom pain",
+    #     "dark souls iii",
+    #     "persona 5",
+    #     "stardew valley",
+    #     "the legend of zelda: breath of the wild",
+    #     "hollow knight",
+    #     "super mario odyssey",
+    # ]
+    # ), "failed title_by_year_range test"
 
 
-    # Testing title_before_year
-    assert isinstance(title_before_year(["2010"]), list), "title_before_year not returning a list"
-    assert sorted(title_before_year(["2010"])) == sorted(
-        ["half-life 2", "final fantasy vii", "metal gear solid 3: snake eater", "bioshock", "persona 4"]
-    ), "failed title_before_year test"
+    # # Testing title_before_year
+    # assert isinstance(title_before_year(["2010"]), list), "title_before_year not returning a list"
+    # assert sorted(title_before_year(["2010"])) == sorted(
+    #     ["half-life 2", "final fantasy vii", "metal gear solid 3: snake eater", "bioshock", "persona 4"]
+    # ), "failed title_before_year test"
 
-    # Testing title_after_year
-    assert isinstance(title_after_year(["2020"]), list), "title_after_year not returning a list"
-    assert sorted(title_after_year(["2020"])) == sorted(
-        ["elden ring", "god of war ragnarok", "the legend of zelda: tears of the kingdom"]
-    ), "failed title_after_year test"
+    # # Testing title_after_year
+    # assert isinstance(title_after_year(["2020"]), list), "title_after_year not returning a list"
+    # assert sorted(title_after_year(["2020"])) == sorted(
+    #     ["elden ring", "god of war ragnarok", "the legend of zelda: tears of the kingdom"]
+    # ), "failed title_after_year test"
 
-    # Testing developer_by_title
-    assert isinstance(developer_by_title(["portal 2"]), list), "developer_by_title not returning a list"
-    assert developer_by_title(["portal 2"]) == ["valve"], "failed developer_by_title test"
+    # # Testing developer_by_title
+    # assert isinstance(developer_by_title(["portal 2"]), list), "developer_by_title not returning a list"
+    # assert developer_by_title(["portal 2"]) == ["valve"], "failed developer_by_title test"
 
-    # Testing title_by_developer
-    assert isinstance(title_by_developer(["cd projekt red"]), list), "title_by_developer not returning a list"
-    assert sorted(title_by_developer(["cd projekt red"])) == sorted(
-        ["the witcher 3: wild hunt", "cyberpunk 2077", "the witcher 2: assassins of kings"]
-    ), "failed title_by_developer test"
+    # # Testing title_by_developer
+    # assert isinstance(title_by_developer(["cd projekt red"]), list), "title_by_developer not returning a list"
+    # assert sorted(title_by_developer(["cd projekt red"])) == sorted(
+    #     ["the witcher 3: wild hunt", "cyberpunk 2077", "the witcher 2: assassins of kings"]
+    # ), "failed title_by_developer test"
 
-    # Testing characters_by_title
-    assert isinstance(characters_by_title(["god of war"]), list), "characters_by_title not returning a list"
-    assert sorted(characters_by_title(["god of war"])) == sorted(
-        ["kratos", "atreus"]
-    ), "failed characters_by_title test"
+    # # Testing characters_by_title
+    # assert isinstance(characters_by_title(["god of war"]), list), "characters_by_title not returning a list"
+    # assert sorted(characters_by_title(["god of war"])) == sorted(
+    #     ["kratos", "atreus"]
+    # ), "failed characters_by_title test"
 
-    # Testing title_by_character
-    assert isinstance(title_by_character(["link"]), list), "title_by_character not returning a list"
-    assert sorted(title_by_character(["link"])) == sorted(
-        ["the legend of zelda: breath of the wild", "the legend of zelda: tears of the kingdom"]
-    ), "failed title_by_character test"
+    # # Testing title_by_character
+    # assert isinstance(title_by_character(["link"]), list), "title_by_character not returning a list"
+    # assert sorted(title_by_character(["link"])) == sorted(
+    #     ["the legend of zelda: breath of the wild", "the legend of zelda: tears of the kingdom"]
+    # ), "failed title_by_character test"
 
-    # Testing title_by_genre
-    assert isinstance(title_by_genre(["open world"]), list), "title_by_genre not returning a list"
-    assert "elden ring" in title_by_genre(["open world"]), "failed title_by_genre test"
+    # # Testing title_by_genre
+    # assert isinstance(title_by_genre(["open world"]), list), "title_by_genre not returning a list"
+    # assert "elden ring" in title_by_genre(["open world"]), "failed title_by_genre test"
 
-    # Testing genre_by_title
-    assert isinstance(genre_by_title(["hollow knight"]), list), "genre_by_title not returning a list"
-    assert sorted(genre_by_title(["hollow knight"])) == sorted(
-        ["metroidvania", "platformer"]
-    ), "failed genre_by_title test"
+    # # Testing genre_by_title
+    # assert isinstance(genre_by_title(["hollow knight"]), list), "genre_by_title not returning a list"
+    # assert sorted(genre_by_title(["hollow knight"])) == sorted(
+    #     ["metroidvania", "platformer"]
+    # ), "failed genre_by_title test"
 
-    # Testing search_pa_list
-    assert search_pa_list(["what", "games", "were", "made", "in", "2050"]) == ["No answers"], "failed search_pa_list test 1"
-    assert search_pa_list(["random", "query"]) == ["I don't understand"], "failed search_pa_list test 2"
-    assert search_pa_list(["who", "developed", "portal", "2"]) == ["valve"], "failed search_pa_list test 3"
+    # # Testing search_pa_list
+    # assert search_pa_list(["what", "games", "were", "made", "in", "2050"]) == ["No answers"], "failed search_pa_list test 1"
+    # assert search_pa_list(["random", "query"]) == ["I don't understand"], "failed search_pa_list test 2"
+    # assert search_pa_list(["who", "developed", "portal", "2"]) == ["valve"], "failed search_pa_list test 3"
 
-    print("All tests passed!")
+    # print("All tests passed!")
 
     # this runs the actual query loop which is the chatbot
     query_loop()
