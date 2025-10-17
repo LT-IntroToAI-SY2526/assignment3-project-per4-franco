@@ -693,5 +693,3 @@ game_db: List[Tuple[str, str, int, List[str], List[str]]] = [
     ("axie infinity", "sky mavis", 2018, ["axies"], ["blockchain", "strategy"]),
     ("myst remastered", "cyan worlds", 2021, ["player"], ["adventure", "puzzle"]),
 ]
-
-
