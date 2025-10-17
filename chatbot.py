@@ -112,7 +112,7 @@ def genre_by_title(matches: List[str]) -> List[str]:
     return result  
 
 def developers_by_genre(matches: List[str]) -> List[str]:
-    result=set()
+    result=set() #makes it so each element has to be unique
     genre=matches[0]
     for game in game_db:
         genres=get_genre(game)
@@ -156,7 +156,7 @@ def query_loop() -> None:
     while True:
         try:
             print()
-            query = input("Your query? ").replace("?", "").lower().split()
+            query = input("Whats your question? ").replace("?", "").lower().split()
             answers = search_pa_list(query)
             for ans in answers:
                 print(ans)
